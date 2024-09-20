@@ -17,15 +17,17 @@ public class Movie {
     private String title;
     private String genre;
     private boolean isPopular;
+    private String posterUrl;  // New field for the poster URL
 
     // Constructors
     public Movie() {
     }
 
-    public Movie(String title, String genre, boolean isPopular) {
+    public Movie(String title, String genre, boolean isPopular, String posterUrl) {
         this.title = title;
         this.genre = genre;
         this.isPopular = isPopular;
+        this.posterUrl = posterUrl;
     }
 
     // Getters and Setters
@@ -60,5 +62,13 @@ public class Movie {
 
     public void setIsPopular(boolean isPopular) {
         this.isPopular = isPopular;
+    }
+
+    public String getPosterUrl() {
+        return posterUrl;
+    }
+
+    public void setPosterUrl(String posterUrl) {
+        this.posterUrl = posterUrl;
     }
 }
