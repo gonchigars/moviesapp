@@ -16,17 +16,17 @@ public class Movie {
 
     private String title;
     private String genre;
-    private boolean isPopular;
+    private boolean popular;
     private String posterUrl;  // New field for the poster URL
 
     // Constructors
     public Movie() {
     }
 
-    public Movie(String title, String genre, boolean isPopular, String posterUrl) {
+    public Movie(String title, String genre, boolean popular, String posterUrl) {
         this.title = title;
         this.genre = genre;
-        this.isPopular = isPopular;
+        this.popular = popular;
         this.posterUrl = posterUrl;
     }
 
@@ -34,10 +34,6 @@ public class Movie {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -56,12 +52,12 @@ public class Movie {
         this.genre = genre;
     }
 
-    public boolean getIsPopular() {
-        return isPopular;
+    public boolean isPopular() {
+        return popular;
     }
 
-    public void setIsPopular(boolean isPopular) {
-        this.isPopular = isPopular;
+    public void setPopular(boolean popular) {
+        this.popular = popular;
     }
 
     public String getPosterUrl() {

@@ -15,7 +15,7 @@ public class MovieService {
     }
 
     public List<Movie> getPopularMovies() {
-        return movieRepository.findByIsPopularTrue();
+        return movieRepository.findByPopularTrue();
     }
 
     public List<Movie> getMoviesByGenre(String genre) {

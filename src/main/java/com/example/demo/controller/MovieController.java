@@ -15,13 +15,11 @@ public class MovieController {
         this.movieService = movieService;
     }
 
-    @CrossOrigin(origins = "*") // Allows requests from any origin
     @GetMapping("/popular")
     public List<Movie> getPopularMovies() {
         return movieService.getPopularMovies();
     }
 
-    @CrossOrigin(origins = "*")
     @GetMapping("/genre/{genre}")
     public List<Movie> getMoviesByGenre(@PathVariable String genre) {
         return movieService.getMoviesByGenre(genre);
